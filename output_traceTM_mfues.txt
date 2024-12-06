@@ -1,0 +1,206 @@
+Machine: a plus
+String: aaa
+Depth: 4
+Total Number of Transitions: 10
+Average Nondeterminism: 2.5
+String accepted in 4
+Tree:
+Level 0: [['', 'q1', 'aaa']]
+Level 1: [['a', 'q1', 'aa'], ['a', 'q2', 'aa']]
+Level 2: [['aa', 'q1', 'a'], ['aa', 'q2', 'a'], ['aa', 'qreject', 'a']]
+Level 3: [['aaa', 'q1', '_'], ['aaa', 'q2', '_'], ['aaa', 'qreject', '_']]
+Level 4: [['aaa_', 'qreject', '_'], ['aa', 'q3', 'a_']]
+
+Machine: a plus
+String: aaaaa
+Depth: 6
+Total Number of Transitions: 16
+Average Nondeterminism: 2.67
+String accepted in 6
+Tree:
+Level 0: [['', 'q1', 'aaaaa']]
+Level 1: [['a', 'q1', 'aaaa'], ['a', 'q2', 'aaaa']]
+Level 2: [['aa', 'q1', 'aaa'], ['aa', 'q2', 'aaa'], ['aa', 'qreject', 'aaa']]
+Level 3: [['aaa', 'q1', 'aa'], ['aaa', 'q2', 'aa'], ['aaa', 'qreject', 'aa']]
+Level 4: [['aaaa', 'q1', 'a'], ['aaaa', 'q2', 'a'], ['aaaa', 'qreject', 'a']]
+Level 5: [['aaaaa', 'q1', '_'], ['aaaaa', 'q2', '_'], ['aaaaa', 'qreject', '_']]
+Level 6: [['aaaaa_', 'qreject', '_'], ['aaaa', 'q3', 'a_']]
+
+Machine: a plus
+String: aabaa
+Depth: 3
+Total Number of Transitions: 7
+Average Nondeterminism: 2.33
+String rejected in 3
+
+Machine: a*b*c* Nondeterministic
+String: abc
+Depth: 4
+Total Number of Transitions: 22
+Average Nondeterminism: 5.5
+String accepted in 4
+Tree:
+Level 0: [['', 'q0', 'abc']]
+Level 1: [['a', 'q0', 'bc'], ['a', 'q1', 'bc'], ['a', 'q2', 'bc'], ['a', 'q3', 'bc']]
+Level 2: [['ab', 'q1', 'c'], ['ab', 'q2', 'c'], ['ab', 'q3', 'c'], ['ab', 'q1', 'c'], ['ab', 'q2', 'c'], ['ab', 'q3', 'c'], ['ab', 'qrej', 'c'], ['ab', 'qrej', 'c']]
+Level 3: [['abc', 'qrej', '_'], ['abc', 'q2', '_'], ['abc', 'q3', '_'], ['abc', 'qrej', '_'], ['abc', 'qrej', '_'], ['abc', 'q2', '_'], ['abc', 'q3', '_'], ['abc', 'qrej', '_']]
+Level 4: [['abc_', 'qrej', '_'], ['abc_', 'qacc', '_']]
+
+Machine: a*b*c* Nondeterministic
+String: aaabbbbcccccc
+Depth: 14
+Total Number of Transitions: 96
+Average Nondeterminism: 6.86
+String accepted in 14
+Tree:
+Level 0: [['', 'q0', 'aaabbbbcccccc']]
+Level 1: [['a', 'q0', 'aabbbbcccccc'], ['a', 'q1', 'aabbbbcccccc'], ['a', 'q2', 'aabbbbcccccc'], ['a', 'q3', 'aabbbbcccccc']]
+Level 2: [['aa', 'q0', 'abbbbcccccc'], ['aa', 'q1', 'abbbbcccccc'], ['aa', 'q2', 'abbbbcccccc'], ['aa', 'q3', 'abbbbcccccc'], ['aa', 'qrej', 'abbbbcccccc'], ['aa', 'qrej', 'abbbbcccccc'], ['aa', 'qrej', 'abbbbcccccc']]
+Level 3: [['aaa', 'q0', 'bbbbcccccc'], ['aaa', 'q1', 'bbbbcccccc'], ['aaa', 'q2', 'bbbbcccccc'], ['aaa', 'q3', 'bbbbcccccc'], ['aaa', 'qrej', 'bbbbcccccc'], ['aaa', 'qrej', 'bbbbcccccc'], ['aaa', 'qrej', 'bbbbcccccc']]
+Level 4: [['aaab', 'q1', 'bbbcccccc'], ['aaab', 'q2', 'bbbcccccc'], ['aaab', 'q3', 'bbbcccccc'], ['aaab', 'q1', 'bbbcccccc'], ['aaab', 'q2', 'bbbcccccc'], ['aaab', 'q3', 'bbbcccccc'], ['aaab', 'qrej', 'bbbcccccc'], ['aaab', 'qrej', 'bbbcccccc']]
+Level 5: [['aaabb', 'q1', 'bbcccccc'], ['aaabb', 'q2', 'bbcccccc'], ['aaabb', 'q3', 'bbcccccc'], ['aaabb', 'qrej', 'bbcccccc'], ['aaabb', 'qrej', 'bbcccccc'], ['aaabb', 'q1', 'bbcccccc'], ['aaabb', 'q2', 'bbcccccc'], ['aaabb', 'q3', 'bbcccccc'], ['aaabb', 'qrej', 'bbcccccc'], ['aaabb', 'qrej', 'bbcccccc']]
+Level 6: [['aaabbb', 'q1', 'bcccccc'], ['aaabbb', 'q2', 'bcccccc'], ['aaabbb', 'q3', 'bcccccc'], ['aaabbb', 'qrej', 'bcccccc'], ['aaabbb', 'qrej', 'bcccccc'], ['aaabbb', 'q1', 'bcccccc'], ['aaabbb', 'q2', 'bcccccc'], ['aaabbb', 'q3', 'bcccccc'], ['aaabbb', 'qrej', 'bcccccc'], ['aaabbb', 'qrej', 'bcccccc']]
+Level 7: [['aaabbbb', 'q1', 'cccccc'], ['aaabbbb', 'q2', 'cccccc'], ['aaabbbb', 'q3', 'cccccc'], ['aaabbbb', 'qrej', 'cccccc'], ['aaabbbb', 'qrej', 'cccccc'], ['aaabbbb', 'q1', 'cccccc'], ['aaabbbb', 'q2', 'cccccc'], ['aaabbbb', 'q3', 'cccccc'], ['aaabbbb', 'qrej', 'cccccc'], ['aaabbbb', 'qrej', 'cccccc']]
+Level 8: [['aaabbbbc', 'qrej', 'ccccc'], ['aaabbbbc', 'q2', 'ccccc'], ['aaabbbbc', 'q3', 'ccccc'], ['aaabbbbc', 'qrej', 'ccccc'], ['aaabbbbc', 'qrej', 'ccccc'], ['aaabbbbc', 'q2', 'ccccc'], ['aaabbbbc', 'q3', 'ccccc'], ['aaabbbbc', 'qrej', 'ccccc']]
+Level 9: [['aaabbbbcc', 'q2', 'cccc'], ['aaabbbbcc', 'q3', 'cccc'], ['aaabbbbcc', 'qrej', 'cccc'], ['aaabbbbcc', 'q2', 'cccc'], ['aaabbbbcc', 'q3', 'cccc'], ['aaabbbbcc', 'qrej', 'cccc']]
+Level 10: [['aaabbbbccc', 'q2', 'ccc'], ['aaabbbbccc', 'q3', 'ccc'], ['aaabbbbccc', 'qrej', 'ccc'], ['aaabbbbccc', 'q2', 'ccc'], ['aaabbbbccc', 'q3', 'ccc'], ['aaabbbbccc', 'qrej', 'ccc']]
+Level 11: [['aaabbbbcccc', 'q2', 'cc'], ['aaabbbbcccc', 'q3', 'cc'], ['aaabbbbcccc', 'qrej', 'cc'], ['aaabbbbcccc', 'q2', 'cc'], ['aaabbbbcccc', 'q3', 'cc'], ['aaabbbbcccc', 'qrej', 'cc']]
+Level 12: [['aaabbbbccccc', 'q2', 'c'], ['aaabbbbccccc', 'q3', 'c'], ['aaabbbbccccc', 'qrej', 'c'], ['aaabbbbccccc', 'q2', 'c'], ['aaabbbbccccc', 'q3', 'c'], ['aaabbbbccccc', 'qrej', 'c']]
+Level 13: [['aaabbbbcccccc', 'q2', '_'], ['aaabbbbcccccc', 'q3', '_'], ['aaabbbbcccccc', 'qrej', '_'], ['aaabbbbcccccc', 'q2', '_'], ['aaabbbbcccccc', 'q3', '_'], ['aaabbbbcccccc', 'qrej', '_']]
+Level 14: [['aaabbbbcccccc_', 'qrej', '_'], ['aaabbbbcccccc_', 'qacc', '_']]
+
+Machine: a*b*c* Nondeterministic
+String: aaabbbbccccab
+Depth: 12
+Total Number of Transitions: 86
+Average Nondeterminism: 7.17
+String rejected in 12
+
+Machine: {w | w has the same number of 0's and 1's} Deterministic
+String: 010101
+Depth: 25
+Total Number of Transitions: 25
+Average Nondeterminism: 1.0
+String accepted in 25
+Tree:
+Level 0: [['', 'q0', '010101']]
+Level 1: [['_', 'q1', '10101']]
+Level 2: [['', 'q3', '_x0101']]
+Level 3: [['_', 'q4', 'x0101']]
+Level 4: [['_x', 'q4', '0101']]
+Level 5: [['_xx', 'q1', '101']]
+Level 6: [['_x', 'q3', 'xx01']]
+Level 7: [['_', 'q3', 'xxx01']]
+Level 8: [['', 'q3', '_xxx01']]
+Level 9: [['_', 'q4', 'xxx01']]
+Level 10: [['_x', 'q4', 'xx01']]
+Level 11: [['_xx', 'q4', 'x01']]
+Level 12: [['_xxx', 'q4', '01']]
+Level 13: [['_xxxx', 'q1', '1']]
+Level 14: [['_xxx', 'q3', 'xx']]
+Level 15: [['_xx', 'q3', 'xxx']]
+Level 16: [['_x', 'q3', 'xxxx']]
+Level 17: [['_', 'q3', 'xxxxx']]
+Level 18: [['', 'q3', '_xxxxx']]
+Level 19: [['_', 'q4', 'xxxxx']]
+Level 20: [['_x', 'q4', 'xxxx']]
+Level 21: [['_xx', 'q4', 'xxx']]
+Level 22: [['_xxx', 'q4', 'xx']]
+Level 23: [['_xxxx', 'q4', 'x']]
+Level 24: [['_xxxxx', 'q4', '_']]
+Level 25: [['_xxxxx_', 'qacc', '_']]
+
+Machine: {w | w has the same number of 0's and 1's} Nondeterministic
+String: 0001011101
+Depth: 71
+Total Number of Transitions: 101
+Average Nondeterminism: 1.42
+String accepted in 71
+Tree:
+Level 0: [['', 'q0', '0001011101']]
+Level 1: [['_', 'q1', '001011101']]
+Level 2: [['_0', 'q1', '01011101']]
+Level 3: [['_00', 'q1', '1011101']]
+Level 4: [['_0', 'q3', '0x011101']]
+Level 5: [['_', 'q3', '00x011101']]
+Level 6: [['', 'q3', '_00x011101']]
+Level 7: [['_', 'q4', '00x011101'], ['_', 'q5', '00x011101']]
+Level 8: [['_x', 'q1', '0x011101'], ['_0', 'qrej', '0x011101']]
+Level 9: [['_x0', 'q1', 'x011101']]
+Level 10: [['_x0x', 'q1', '011101']]
+Level 11: [['_x0x0', 'q1', '11101']]
+Level 12: [['_x0x', 'q3', '0x1101']]
+Level 13: [['_x0', 'q3', 'x0x1101']]
+Level 14: [['_x', 'q3', '0x0x1101']]
+Level 15: [['_', 'q3', 'x0x0x1101']]
+Level 16: [['', 'q3', '_x0x0x1101']]
+Level 17: [['_', 'q4', 'x0x0x1101'], ['_', 'q5', 'x0x0x1101']]
+Level 18: [['_x', 'q4', '0x0x1101'], ['_x', 'q5', '0x0x1101']]
+Level 19: [['_xx', 'q1', 'x0x1101'], ['_x0', 'qrej', 'x0x1101']]
+Level 20: [['_xxx', 'q1', '0x1101']]
+Level 21: [['_xxx0', 'q1', 'x1101']]
+Level 22: [['_xxx0x', 'q1', '1101']]
+Level 23: [['_xxx0', 'q3', 'xx101']]
+Level 24: [['_xxx', 'q3', '0xx101']]
+Level 25: [['_xx', 'q3', 'x0xx101']]
+Level 26: [['_x', 'q3', 'xx0xx101']]
+Level 27: [['_', 'q3', 'xxx0xx101']]
+Level 28: [['', 'q3', '_xxx0xx101']]
+Level 29: [['_', 'q4', 'xxx0xx101'], ['_', 'q5', 'xxx0xx101']]
+Level 30: [['_x', 'q4', 'xx0xx101'], ['_x', 'q5', 'xx0xx101']]
+Level 31: [['_xx', 'q4', 'x0xx101'], ['_xx', 'q5', 'x0xx101']]
+Level 32: [['_xxx', 'q4', '0xx101'], ['_xxx', 'q5', '0xx101']]
+Level 33: [['_xxxx', 'q1', 'xx101'], ['_xxx0', 'qrej', 'xx101']]
+Level 34: [['_xxxxx', 'q1', 'x101']]
+Level 35: [['_xxxxxx', 'q1', '101']]
+Level 36: [['_xxxxx', 'q3', 'xx01']]
+Level 37: [['_xxxx', 'q3', 'xxx01']]
+Level 38: [['_xxx', 'q3', 'xxxx01']]
+Level 39: [['_xx', 'q3', 'xxxxx01']]
+Level 40: [['_x', 'q3', 'xxxxxx01']]
+Level 41: [['_', 'q3', 'xxxxxxx01']]
+Level 42: [['', 'q3', '_xxxxxxx01']]
+Level 43: [['_', 'q4', 'xxxxxxx01'], ['_', 'q5', 'xxxxxxx01']]
+Level 44: [['_x', 'q4', 'xxxxxx01'], ['_x', 'q5', 'xxxxxx01']]
+Level 45: [['_xx', 'q4', 'xxxxx01'], ['_xx', 'q5', 'xxxxx01']]
+Level 46: [['_xxx', 'q4', 'xxxx01'], ['_xxx', 'q5', 'xxxx01']]
+Level 47: [['_xxxx', 'q4', 'xxx01'], ['_xxxx', 'q5', 'xxx01']]
+Level 48: [['_xxxxx', 'q4', 'xx01'], ['_xxxxx', 'q5', 'xx01']]
+Level 49: [['_xxxxxx', 'q4', 'x01'], ['_xxxxxx', 'q5', 'x01']]
+Level 50: [['_xxxxxxx', 'q4', '01'], ['_xxxxxxx', 'q5', '01']]
+Level 51: [['_xxxxxxxx', 'q1', '1'], ['_xxxxxxx0', 'qrej', '1']]
+Level 52: [['_xxxxxxx', 'q3', 'xx']]
+Level 53: [['_xxxxxx', 'q3', 'xxx']]
+Level 54: [['_xxxxx', 'q3', 'xxxx']]
+Level 55: [['_xxxx', 'q3', 'xxxxx']]
+Level 56: [['_xxx', 'q3', 'xxxxxx']]
+Level 57: [['_xx', 'q3', 'xxxxxxx']]
+Level 58: [['_x', 'q3', 'xxxxxxxx']]
+Level 59: [['_', 'q3', 'xxxxxxxxx']]
+Level 60: [['', 'q3', '_xxxxxxxxx']]
+Level 61: [['_', 'q4', 'xxxxxxxxx'], ['_', 'q5', 'xxxxxxxxx']]
+Level 62: [['_x', 'q4', 'xxxxxxxx'], ['_x', 'q5', 'xxxxxxxx']]
+Level 63: [['_xx', 'q4', 'xxxxxxx'], ['_xx', 'q5', 'xxxxxxx']]
+Level 64: [['_xxx', 'q4', 'xxxxxx'], ['_xxx', 'q5', 'xxxxxx']]
+Level 65: [['_xxxx', 'q4', 'xxxxx'], ['_xxxx', 'q5', 'xxxxx']]
+Level 66: [['_xxxxx', 'q4', 'xxxx'], ['_xxxxx', 'q5', 'xxxx']]
+Level 67: [['_xxxxxx', 'q4', 'xxx'], ['_xxxxxx', 'q5', 'xxx']]
+Level 68: [['_xxxxxxx', 'q4', 'xx'], ['_xxxxxxx', 'q5', 'xx']]
+Level 69: [['_xxxxxxxx', 'q4', 'x'], ['_xxxxxxxx', 'q5', 'x']]
+Level 70: [['_xxxxxxxxx', 'q4', '_'], ['_xxxxxxxxx', 'q5', '_']]
+Level 71: [['_xxxxxxxx', 'q3', 'x_'], ['_xxxxxxxxx_', 'qacc', '_']]
+
+Machine: {w | w has the same number of 0's and 1's} Nondeterministic
+String: 000101110101
+Depth: 71
+Total Number of Transitions: 100
+Average Nondeterminism: 1.41
+Execution stopped after limit of 100 total transitions reached
+
+Machine: {w | w has the same number of 0's and 1's} Nondeterministic
+String: 010101
+Depth: 20
+Total Number of Transitions: 30
+Average Nondeterminism: 1.5
+Execution stopped after limit of 20 configuration tree depth reached
+
